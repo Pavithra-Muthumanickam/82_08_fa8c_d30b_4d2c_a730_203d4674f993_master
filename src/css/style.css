@@ -1,0 +1,40 @@
+.form {
+    display: flex;
+    flex-wrap: wrap;
+}
+.form input {
+    margin-bottom: 10px;
+}
+button {
+    width: 100%;
+}
+
+@media (min-width:768px) {
+.first-name, .last-name, .age {
+    flex:1;
+}
+.last-name {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.address {
+    width: 100%;
+}
+.place-of-work, .phone-number {
+    margin-right: 5px;
+}
+.skype,.job-title {
+    margin-left: 5px;
+    flex:3
+}
+
+.skype, .phone-number, .job-title, .place-of-work {
+    width: 50%;
+}
+}
+
+@media (max-width:767px) {
+    .form input {
+        width:100%;
+    }
+}
